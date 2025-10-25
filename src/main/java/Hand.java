@@ -9,6 +9,10 @@ public class Hand {
         cards = new ArrayList<>();
     }
 
+    public String getPlayerName(){
+        return playerName;
+    }
+
     public void deal(Card card){
         cards.add(card);
     }
@@ -27,7 +31,10 @@ public class Hand {
         return value;
     }
 
+
+
     public String toString(){
         return  String.format("%s", playerName);
     }
+
 }
